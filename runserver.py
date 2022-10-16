@@ -10,3 +10,6 @@ elif os.environ['FLASK_ENV'] == 'prod':
 	app = create_app(config.ProductionConfig)
 else:
 	print('ENV NOT SET TO dev, staging or prod')
+
+if __name__ == "__main__":
+    create_app().run()
