@@ -1,5 +1,9 @@
 .main {
     height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font: Trebuchet MS (sans-serif);
+    color:antiquewhite;
 }
 
 .title {
@@ -7,11 +11,11 @@
 }
 
 .left {
-    background-color: bisque;
+    
 }
 
 .right {
-    background-color: cornflowerblue;
+    
 }
 
 .blurb-container {
@@ -19,16 +23,24 @@
     width: 80%;
     margin: auto;
     margin-top: 10vh;
-    background-color: azure;
 }
 
 .company-name {
-    font-size: 44px;
+    font-size: 8vh;
+    font-weight: 800;
     margin: auto;
     text-align: center;
 }
 
 .blurb {
     width: 80%;
-    background-color: burlywood;
+    font-size: 4vh;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+.cta {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8vh;
 }
