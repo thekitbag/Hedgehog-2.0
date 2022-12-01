@@ -8,12 +8,17 @@
 
 <div class="main row">
     <div class="col-12">
-        <div class="blurb-container">
+        <div class="logo-container">
             <div class="company-name">Hedgehog</div>
-            <div class="blurb">Looking for somewhere to eat or drink? <br><br>We can't help with that (yet) but we can offer you 
-                the chance to win a $50 voucher if you fill out our survey (it takes less than 5 mintues) 
-            </div>
-            <a href="https://forms.gle/nf1UVEPjoftRaWZj8"><div class="btn btn-primary btn-lg cta">Take Our Survey</div></a>
+        <div class="form-container">
+            <form action="" method="post" class="search-form" novalidate>
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.search.label }}<br>
+                    {{ form.search(size=32) }}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
         </div>
     </div>
 </div>

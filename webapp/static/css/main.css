@@ -10,18 +10,40 @@
     font-size: 66px;
 }
 
-.blurb-container {
+.company-name {
+    font-size: 8vh;
+    font-weight: 800;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-container {
+    height:10vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.form-container {
     height:80vh;
     width: 80%;
     margin: auto;
     margin-top: 10vh;
 }
 
-.company-name {
-    font-size: 8vh;
-    font-weight: 800;
-    margin: auto;
+.search-form {
     text-align: center;
+    font-size: 32px;
+}
+
+
+/* For the survey-landing page */
+
+.blurb-container {
+    height:80vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
 }
 
 .blurb {
@@ -36,3 +58,5 @@
     margin-left: 10%;
     margin-top: 8vh;
 }
+
+
