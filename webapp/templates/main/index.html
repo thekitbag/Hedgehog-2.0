@@ -6,21 +6,21 @@
 
 {% block app_content %}
 
-<div class="main row">
-    <div class="col-12">
-        <div class="logo-container">
-            <div class="company-name">Hedgehog</div>
-        <div class="form-container">
-            <form action="" method="post" class="search-form" novalidate>
-                {{ form.hidden_tag() }}
-                <p>
-                    {{ form.search.label }}<br>
-                    {{ form.search(size=32) }}
-                </p>
-                <p>{{ form.submit() }}</p>
-            </form>
-        </div>
+
+<div class="col-12">
+    <div class="logo-container">
+        <div class="company-name">Hedgehog</div>
+    <div class="form-container">
+        <form action="{{url_for('main.index')}}" method="post" class="search-form" role="form">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.search_term.label }}<br>
+                {{ form.search_term(size=32) }}
+            </p>
+            <p class="btn btn-primary btn-lg">Search</p>
+        </form>
     </div>
 </div>
+
 
 {% endblock %}

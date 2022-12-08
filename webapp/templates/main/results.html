@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block moreScripts %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+{% endblock moreScripts %}
+
+{% block app_content %}
+
+
+<div class="col-12">
+    {% for result in results['results'] %}
+        {% include 'main/_result.html' %}
+    {% endfor %}
+</div>
+
+
+{% endblock %}
