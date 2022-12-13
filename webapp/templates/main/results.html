@@ -6,8 +6,11 @@
 
 {% block app_content %}
 
-
-<div class="col-12">
+    <div class="col-12 mt-2 ml-3">
+        <h4>Results for {{search_term}}</h4>
+    </div>
+</div>
+<div class="col-12 mt-1">
     {% for result in results['results'] %}
         {% include 'main/_result.html' %}
     {% endfor %}

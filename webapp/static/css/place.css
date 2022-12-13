@@ -1,0 +1,8 @@
+.score-container {
+    width: 148px;
+    border: 2px solid silver;
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+    box-shadow: 2px;
+}

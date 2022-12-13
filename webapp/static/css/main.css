@@ -2,6 +2,7 @@ body {
     height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
     font: Trebuchet MS (sans-serif);
     color:antiquewhite;
 }
@@ -36,6 +37,46 @@ body {
     font-size: 32px;
 }
 
+#search_term {
+    max-width: 100%
+}
+
+.profile {
+    height: 70px;
+    width: 290px;
+    float: right;
+    border: 1px solid grey;
+    border-radius: 4px;
+    position: relative;
+    bottom: 14px;
+    right: 14px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.profile:hover {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.result-container {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.result-container: hover {
+    text-decoration: none;
+}
+
+.result-blurb {
+    background-size: cover;
+}
+
+.text-holder {
+    background: rgba(0, 0, 0, 0.6);
+    padding-left: 12px;
+    padding-top: 8px;
+}
 
 /* For the survey-landing page */
 

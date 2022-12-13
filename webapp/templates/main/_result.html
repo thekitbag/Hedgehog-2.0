@@ -1,11 +1,12 @@
-<div class="result-container row mt-2 w-75 mx-auto border rounded">
-    <div class="col-4">
-        <img src="{{result['photo_url']}}" width="220" height="180">
+<a href="/place?placeId={{result['id']}}">
+    <div class="result-container row mt-2 w-75 mx-auto border rounded">
+        <div class="result-blurb w-100" style="background-image: url({{result['photo_url']}});">
+            <div class="text-holder h-100">
+                <h4>{{result['name']}}</h4>
+                <p>Hogscore: {{result['score']}} / 100</p>
+                <p>{{result['number_of_reviews']}} Reviews</p>
+                <p>Most mentioned: {{result['most_mentioned']}}</p>
+            </div>
+        </div>
     </div>
-    <div class="col-8">
-        <h4>{{result['name']}}</h4>
-        <p>Hogscore: {{result['score']}} / 100</p>
-        <p>{{result['number_of_reviews']}} Reviews</p>
-        <p>Most mentioned: {{result['most_mentioned']}}</p>
-    </div> 
-</div>
+</a>
